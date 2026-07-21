@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="One-page CV of Abraham Haddioui Lastras, Creative Technologist and Hybrid Maker in Arnhem, Netherlands.">
+  <title>Abraham Haddioui Lastras | Creative Technologist CV</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #101820;
+      --muted: #52606b;
+      --line: #d8e0e5;
+      --soft: #f2f6f7;
+      --accent: #007a55;
+      --accent-2: #0067a3;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #dfe5e8;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9pt;
+      line-height: 1.31;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a { color: inherit; text-decoration-color: #94a2aa; text-underline-offset: 2px; }
+    p, ul { margin-top: 0; }
+
+    .screen-actions {
+      width: 210mm;
+      margin: 18px auto 8px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .screen-actions a, .screen-actions button {
+      border: 1px solid #283642;
+      border-radius: 5px;
+      background: #101820;
+      color: white;
+      padding: 9px 13px;
+      font: 700 12px/1 Arial, sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 20px;
+      padding: 11.5mm 13mm 9.5mm;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 12px 50px rgba(16, 24, 32, .18);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 9mm;
+      align-items: end;
+      padding-bottom: 4.5mm;
+      border-bottom: 1.2mm solid var(--ink);
+    }
+
+    .kicker {
+      margin: 0 0 2mm;
+      color: var(--accent);
+      font-size: 7.2pt;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26pt;
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    .role {
+      margin: 2.3mm 0 0;
+      color: var(--accent-2);
+      font-size: 12.5pt;
+      font-weight: 700;
+      letter-spacing: -.018em;
+    }
+
+    .contact {
+      margin: 0;
+      display: grid;
+      gap: 1.2mm;
+      color: #3c4b55;
+      font-size: 8pt;
+      text-align: right;
+    }
+
+    .summary {
+      margin: 4mm 0 3.8mm;
+      padding: 3mm 3.3mm;
+      border-left: 1mm solid var(--accent);
+      background: var(--soft);
+      font-size: 9.2pt;
+      line-height: 1.36;
+    }
+
+    section { margin-top: 3.6mm; }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 2.5mm;
+      margin: 0 0 2.1mm;
+      color: #34434d;
+      font-size: 7.6pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h2::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+
+    .entry { margin-bottom: 2.55mm; break-inside: avoid; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-head { display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; }
+    h3 { margin: 0; font-size: 10pt; line-height: 1.15; }
+    .meta { flex: 0 0 auto; color: var(--muted); font-size: 7.7pt; font-weight: 700; white-space: nowrap; }
+    .tech { margin: .6mm 0 1mm; color: var(--accent-2); font-size: 7.7pt; font-weight: 700; }
+
+    ul { margin-bottom: 0; padding-left: 4mm; }
+    li { margin: 0 0 .7mm; padding-left: .5mm; }
+    li:last-child { margin-bottom: 0; }
+    strong { font-weight: 760; }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm 6mm;
+    }
+
+    .compact p { margin: .6mm 0 0; color: #26333b; }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.34fr 1fr;
+      gap: 6mm;
+      margin-top: 3.6mm;
+    }
+
+    .bottom-grid section { margin-top: 0; }
+    .skill-line { margin: 0 0 1.45mm; }
+    .skill-line:last-child { margin-bottom: 0; }
+    .skill-line b { color: #25333b; }
+    .edu { margin-bottom: 1.5mm; }
+    .edu:last-child { margin-bottom: 0; }
+    .edu b { display: block; font-size: 8.2pt; }
+    .edu span { color: var(--muted); font-size: 7.5pt; }
+
+    .footer-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 5mm;
+      margin-top: 4mm;
+      padding-top: 2mm;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 7.3pt;
+    }
+
+    @page { size: A4; margin: 0; }
+
+    @media print {
+      body { background: #fff; }
+      .screen-actions { display: none !important; }
+      .sheet { margin: 0; box-shadow: none; }
+      a { text-decoration: none; }
+    }
+
+    @media screen and (max-width: 820px) {
+      body { background: #fff; }
+      .screen-actions { width: auto; margin: 10px; }
+      .sheet {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 22px 18px 30px;
+        overflow: visible;
+        box-shadow: none;
+      }
+      header { grid-template-columns: 1fr; gap: 16px; }
+      .contact { text-align: left; }
+      .experience-grid, .bottom-grid { grid-template-columns: 1fr; gap: 14px; }
+      .entry-head { align-items: flex-start; }
+      .meta { white-space: normal; text-align: right; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-actions" aria-label="CV actions">
+    <a href="../">Portfolio</a>
+    <a href="Abraham-Haddioui-Creative-Technologist.pdf" download>Download PDF</a>
+    <button type="button" onclick="window.print()">Print</button>
+  </div>
+
+  <main class="sheet">
+    <header>
+      <div>
+        <p class="kicker">Creative technology / product / live experiences</p>
+        <h1>Abraham Haddioui Lastras</h1>
+        <p class="role">Creative Technologist & Hybrid Maker</p>
+      </div>
+      <address class="contact">
+        <span>Arnhem, Gelderland, Netherlands</span>
+        <a href="mailto:2f.abraham@gmail.com">2f.abraham@gmail.com</a>
+        <a href="tel:+31687766383">+31 6 87766383</a>
+        <a href="https://creative-tech-portfolio.vercel.app/">Portfolio</a>
+        <a href="https://github.com/kinkydisorder">GitHub</a>
+      </address>
+    </header>
+
+    <p class="summary">Creative technologist in Arnhem with a Fine Arts foundation and hands-on production discipline. I build audio-reactive WebGL experiences, React and TypeScript interfaces, and Python automations from concept to a working demo. I am strongest where creative intent meets technical delivery: interactive visuals, prototypes, campaign experiences and useful internal tools. Spanish native, professional English and developing Dutch.</p>
+
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>NEXUS Visual Engine</h3>
+          <span class="meta"><a href="https://github.com/kinkydisorder/nexus-visual-engine">Source code</a> / 2026</span>
+        </div>
+        <p class="tech">WebGL / Three.js / GLSL / Web Audio API</p>
+        <ul>
+          <li><strong>Built 30 audio-reactive visual engines</strong> by combining multi-band FFT, beat detection and shared shader uniforms in one browser gallery.</li>
+          <li>Designed adaptive quality, a reduce-flashes mode and an emergency blackout for safer use in live performance and installation contexts.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Career OS</h3>
+          <span class="meta">Private product / 2026</span>
+        </div>
+        <p class="tech">Next.js / React / TypeScript / Zod / AI UX</p>
+        <ul>
+          <li><strong>Structured one career workspace across 3 interface languages and 4 server-only AI routes</strong> using typed content, request validation, rate limiting and documented security boundaries.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Job Alerts NL</h3>
+          <span class="meta">Local automation / 2026</span>
+        </div>
+        <p class="tech">Python / YAML / data pipeline / scheduled workflow</p>
+        <ul>
+          <li><strong>Reduced multi-source vacancy research to one daily, deduplicated, 3-tier digest</strong> by externalising search rules and ranking logic in editable configuration.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="experience-title">
+      <h2 id="experience-title">Selected experience</h2>
+      <div class="experience-grid">
+        <article class="entry compact">
+          <div class="entry-head"><h3>Founder - AuxDesign</h3><span class="meta">Remote / 2023-2025</span></div>
+          <p>Built and maintained WordPress sites, UX/UI systems and digital marketing workflows; translated business needs into practical web delivery.</p>
+        </article>
+        <article class="entry compact">
+          <div class="entry-head"><h3>Production maker - NL</h3><span class="meta">Gelderland / 2024-2026</span></div>
+          <p>Applied technical drawings, quality control and VCA safety across 2 Dutch manufacturing environments in multilingual teams.</p>
+        </article>
+        <article class="entry compact">
+          <div class="entry-head"><h3>Director & maker - Carpinteria HyM</h3><span class="meta">Madrid / 2016-2024</span></div>
+          <p>Combined workshop delivery with budgets, procurement, supplier coordination, client communication and the company's digital presence.</p>
+        </article>
+        <article class="entry compact">
+          <div class="entry-head"><h3>Brand promoter - Vivo</h3><span class="meta">MediaMarkt / 2022-2023</span></div>
+          <p>Explained consumer technology in a high-traffic retail setting and reported sales, stock and customer signals.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="bottom-grid">
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Capabilities</h2>
+        <p class="skill-line"><b>Creative code:</b> WebGL, Three.js, GLSL, Web Audio, generative and real-time visuals</p>
+        <p class="skill-line"><b>Product:</b> React, TypeScript, Next.js, UX/UI, responsive interfaces, prototyping</p>
+        <p class="skill-line"><b>Automation:</b> Python, YAML, structured data, AI-assisted workflows, documentation</p>
+        <p class="skill-line"><b>Making:</b> Adobe Creative Suite, graphic and industrial design, technical drawings, VCA safety</p>
+        <p class="skill-line"><b>Languages:</b> Spanish native / English professional / Dutch A2-B1, improving</p>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">Education & training</h2>
+        <div class="edu"><b>Bachelor of Fine Arts</b><span>University of Salamanca / 2017-2022</span></div>
+        <div class="edu"><b>AI & Algorithms - 180h</b><span>SEPE / 2023</span></div>
+        <div class="edu"><b>Digital Transformation & Industry 4.0 - 328h</b><span>EOI / 2022</span></div>
+        <div class="edu"><b>VCA VOL - Occupational Safety</b><span>SSVV / Netherlands</span></div>
+      </section>
+    </div>
+
+    <div class="footer-line">
+      <span>EU resident / driving licence B / own vehicle</span>
+      <span>Open to English-speaking teams in the Netherlands</span>
+    </div>
+  </main>
+</body>
+</html>

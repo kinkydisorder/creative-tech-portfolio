@@ -1,0 +1,6 @@
+.env*
+.vercel
+.git
+.gitignore
+tmp
+README.md
