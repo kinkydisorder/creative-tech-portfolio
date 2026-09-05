@@ -1,47 +1,55 @@
-# Creative Tech Portfolio
+# Abraham Haddioui Lastras — Creative Technologist / AI Product Builder
 
-Public, recruiter-facing portfolio for Abraham Haddioui Lastras.
+Recruiter-facing portfolio for **Abraham Haddioui Lastras**, based in Arnhem, Netherlands.
 
-Live site: <https://creative-tech-portfolio.vercel.app/>
+I work where **AI-assisted product development, full-stack web, automation, systems thinking and visual design** overlap. My background combines Fine Arts and UX/UI with hands-on web delivery, Python/TypeScript workflows and production experience in the Netherlands.
 
-Preserved Hacker Lab: <https://v0-flipper-zero-cv-page.vercel.app/>
+## Target roles
 
-## Positioning
+- AI Product Engineer / Applied AI Product Builder
+- Design Engineer / Creative Technologist
+- Product Designer / UI/UX Designer for technical products
+- Full-stack / automation roles where AI tools, data and user-facing interfaces meet
+- Interactive / real-time / game-tech prototyping
 
-**Creative Technologist & Hybrid Maker**
+**Working languages:** Spanish (native), English (C1/professional), Dutch (basic / improving).  
+**Location:** Arnhem, Gelderland — open to hybrid Netherlands roles, remote Europe and relocation for the right full-time role.
 
-Audience: English-speaking creative agencies, event studios, product teams and marketing teams in the Netherlands, with Arnhem and Gelderland as the geographic focus.
+## Selected proof
 
-Primary goal: employment with an English-speaking creative, event or product team. Secondary goal: selected freelance collaborations. Payments and marketplace features are intentionally outside the first release.
+| Project | What it proves | Stack / evidence |
+| --- | --- | --- |
+| [NEXUS Visual Engine](https://github.com/abrahamhl/nexus-visual-engine) | Real-time creative coding, audio analysis, performance UI, GPU-aware design | WebGL, Three.js, GLSL, Web Audio; 30 audio-reactive engines |
+| [Gelderland Crane Simulator](https://github.com/abrahamhl/gelderland-crane-simulator) | Simulation, deterministic logic, safety gates, automated verification, human-in-the-loop AI development | Godot 4.6.3; 35/35 automated checks; measured pendulum validation |
+| [loopsmith](https://github.com/abrahamhl/loopsmith) | Algorithmic media tooling and measurable creative QA instead of subjective guesswork | FFmpeg/ffprobe, exhaustive seam scoring, exact-duration video assembly |
+| [Creative Tech Portfolio](https://creative-tech-portfolio.vercel.app/) | Recruiter-facing product presentation and live technical case studies | Responsive web, product storytelling, deployed demos |
+| [Carpintería HyM](https://carpinteriasanmartindevaldeiglesias.es/) | Digital transformation of a traditional business and practical web/lead-generation delivery | WordPress, UX/UI, local SEO, content and commercial web strategy |
+| [ISMAJAKI](https://ismajaki.com/) | Brand systems, AI-assisted art direction, event/DJ visual experimentation | Digital art, motion/visual direction, web and generative workflows |
+| [AUX Design](https://auxdesign.nl/) | Web/UX practice and client-facing digital work | WordPress, UX/UI, web production, digital strategy |
 
-## Public/private boundary
+## Capability map
 
-- This repository is the public source of truth for the portfolio and printable CV.
-- `NEXUS Visual Engine` is linked as a live public project.
-- `Career OS` is described only as an anonymised case study. Its working application and personal data stay private.
-- `Job Alerts NL` is described as a local automation case study until its sources and public configuration are hardened.
+**AI & automation** — LLM-assisted workflows, agent/tool orchestration concepts, prompt/evaluation thinking, Python automation, structured data, API-oriented workflows, human approval gates.
 
-## Files
+**Product & web** — React, TypeScript, Next.js, responsive UI, UX/UI, design systems, WordPress, rapid prototyping, frontend/backend integration concepts.
 
-- `index.html` - public portfolio landing page.
-- `cv/index.html` - ATS-readable, print-ready one-page CV.
-- `cv/Abraham-Haddioui-Creative-Technologist.pdf` - generated delivery PDF.
-- `vercel.json` - static routing and security headers.
+**Creative technology** — WebGL, Three.js, GLSL, Web Audio, generative visuals, motion systems, interactive prototypes, Adobe Creative Suite, Fine Arts foundation.
 
-## Local preview
+**Systems & delivery** — documentation, testable decision logs, verification, safety-minded workflows, technical drawings, VCA/VOL, hands-on production discipline.
 
-```powershell
-python -m http.server 4173
-```
+## Current application material
 
-Open `http://127.0.0.1:4173/` and `http://127.0.0.1:4173/cv/`.
+- Portfolio: https://creative-tech-portfolio.vercel.app/
+- CV: https://creative-tech-portfolio.vercel.app/cv/
+- GitHub: https://github.com/abrahamhl
+- AUX Design: https://auxdesign.nl/
 
-## Deployment workflow
+The portfolio is deliberately evidence-first: public projects show what works, what was measured, and where limitations remain. Private career tooling and personal data stay private.
 
-1. Work locally.
-2. Deploy a Vercel Preview without `--prod`.
-3. Check desktop, mobile, CV download and print output.
-4. Promote the verified Preview to Production.
-5. Connect the final professional domain to the Production deployment.
+## Repository policy
 
-Do not copy the `.vercel` directory or secrets into Git.
+This repository is the public source of truth for recruiter-facing material. Experimental interfaces are kept separate from the professional application path. JavaScript/TypeScript projects are managed with **pnpm**; dependencies should not be added casually and supply-chain risk should be reviewed before adoption.
+
+## Contact
+
+For roles or selected collaborations: **2f.abraham@gmail.com**
